@@ -1,0 +1,580 @@
+@charset "utf-8";
+
+/* base_design.css ver1.01 : Written by syam 2016.08.xx 記 */
+/* PCでもSPでも同じ表示・表現にしたい内容を記載していくCSS */
+
+/*わかりやすいようにエリア単位で背景をつける*/
+
+#main_field
+{
+    margin-bottom: 10px;
+}
+
+
+/*背景設定*/
+body
+{
+    background: #f9f8f6;
+}
+main
+{
+    padding: 20px 0 !important;
+}
+a{
+    color: #524b3b;
+    text-decoration: none;
+}
+a:hover
+{
+    color: #776d56;
+}
+li
+{
+    list-style: none;
+}
+/*初期化し損ねている余計な余白消し*/
+form,h1,h2,h3,h4,dl,dt,dd,ul,li
+{
+    margin: 0;
+    padding: 0;
+}
+/*余計なLIのマークを初期化*/
+#carousel_slider
+{
+    list-style: none;
+}
+/*OpenSans Font 利用classを定義*/
+header li,#page_top,footer small, .sans
+{
+    font-family: "Open Sans", sans-selif !important;
+}
+/*clearfix*/
+.clearfix
+{
+    zoom: 1;
+}
+.clearfix:after
+{
+    content:"";
+    display: block;
+    clear: both;
+}
+/*footer周りの設定*/
+footer small
+{
+    margin-bottom: 20px;
+    text-align: center;
+    color: #b8b4ac;
+}
+#page_top
+{
+    font-weight: bold;
+    padding: 20px 0;
+}
+#page_top *
+{
+    font-size: 1.4rem;
+}
+#page_top i
+{
+    margin-right: 10px;
+}
+footer ul
+{
+    margin: 0 auto 20px;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #e2ddd4;
+}
+footer li
+{
+    display: inline-block;
+    /display: inline;
+    /zoom: 1;
+    margin: 0 5px;
+    padding: 0 10px;
+    font-size: 1.2rem;
+    background: url(../image/common/dot.gif) no-repeat 0 9px;
+}
+
+/*sub_fieldのbox*/
+#search_engine, .sub_box
+{
+    margin-bottom: 10px;
+    background: #fff;
+}
+/*検索エンジン*/
+#search_engine
+{
+    padding: 15px;
+}
+input[type="search"]
+{
+    margin: auto;
+    padding: 3px 15% 3px 3%;
+    width: 82%;
+    height: 24px;
+    border: none;
+    background: #eee;
+    font-size: 1.1rem;
+    position: relative; /*入力部分の上に検索ボタンをおくためのおまじない*/
+    z-index: 0; /*重ね順の定義*/
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+}
+input[type="image"]
+{
+    float: right;
+    margin: -24px 5px 0 0;
+    position: relative;
+    z-index:100;
+    height: 18px;
+}
+
+/*sub_box link_box 設定*/
+.sub_box h4, .link_box h4
+{
+    background:#887f69;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 20px 15px;
+}
+.link_box h4
+{
+    cursor: pointer;
+    background: #887f69 url(../image/common/next_icon.png) no-repeat 95% center;
+}
+.link_box h4:hover
+{
+    background: #b7b1a1 url(../image/common/next_icon.png) no-repeat 95% center;
+}
+.link_box h4.openlink
+{
+    background: #887f69 url(../image/common/down_icon.png) no-repeat 95% center;
+}
+.link_box ul
+{
+    display: none;
+}
+.link_box li
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid #f9f8f6;
+}
+.link_box li a
+{
+    display: block;
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    background: url(../image/common/next_icon_gray.png) no-repeat 95% center;
+}
+.link_box li a:hover
+{
+    background: #eee url(../image/common/next_icon_gray.png) no-repeat 95% center;
+}
+.sub_pict
+{
+    padding: 10px;
+}
+.sub_text
+{
+    padding: 0 10px 10px;
+    font-size: 1.2rem;
+}
+.sub_text p
+{
+    margin: 0;
+}
+.sub_pict img
+{
+    display: block;
+    width: 100%;
+}
+.more_button
+{
+    margin: 20px auto 10px;
+    text-align: center;
+}
+.more_button a
+{
+    background-color: #8a8168;
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border-radius: 28px;
+    display: inline-block;
+    padding: 5px 28px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.more_button a:hover
+{
+    background-color: #b9b3a4;
+}
+
+/*Itemlist*/
+.item_list h2
+{
+    margin: 15px auto;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #8a8168;
+    font-weight: bold;
+    background: url(../image/common/border.gif) repeat-x 0 center;
+}
+.item_list h2 span
+{
+    padding: 0 10px;
+    background: #f9f8f6;
+}
+#new_items_list ul
+{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#new_items_list li
+{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#popular_items_list li, #watch_items_list li, #category_list li
+{
+    float: left;
+    list-style:none;
+    
+}
+.item_list li a
+{
+    display: block;
+    padding: 7px;
+    border: 1px solid #f9f8f6;
+    background: #fff;
+}
+.item_list li a:hover
+{
+    opacity: 0.75;
+}
+.item_list li img
+{
+    display: block;
+    width: 100%;
+}
+.item_name, .item_price
+{
+    font-size: 1.2rem;
+}
+.item_price span
+{
+    margin-right: 5px;
+}
+.item_name
+{
+    margin-bottom: 1rem;
+}
+
+/*shopping guide*/
+#shopping_guide h2
+{
+    margin: 15px auto;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #8a8168;
+    font-weight: bold;
+    background: url(../image/common/border.gif) repeat-x 0 center;
+}
+#shopping_guide h2 span
+{
+   padding: 0 10px;
+   background: #f9f8f6;
+}
+#guide_wrapper
+{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.guide_box
+{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #fff;
+}
+.guide_wrap
+{
+    width: 100%;
+    padding-bottom: 10px;
+    border: 1px solid #f9f8f6;
+}
+.guide_box h3
+{
+    margin: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8a8168;
+}
+.guide_box dt, .guide_box dd
+{
+    font-size: 1.2rem;
+    margin: 5px 10px;
+}
+.guide_box dt
+{
+    font-weight: bold;
+    color: #8a8168;
+}
+#guide_left .guide_pict
+{
+    margin-left: 10px;
+}
+#guide_left img
+{
+    width: 50%;
+}
+#guide_right img
+{
+    width: 95%;
+}
+
+/*パンクズリスト*/
+#pank
+{
+    margin-bottom: 10px;
+    padding: 0 5px 1px;
+    background: #e8e4da;
+    border: solid 3px #e8e4da;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+#pank li
+{
+    font-size: 1.2rem;
+    display: inline-block;
+    color: #8a8168;
+}
+#pank li i
+{
+    margin-right:7px;
+    font-size: 1.3rem;
+}
+#pank li a
+{
+    color: #8a8168;
+}
+#pank li a:hover
+{
+    opacity: 0.75;
+}
+#pank li a:after
+{
+    content: "/";
+}
+#pank li:last-child a::after
+{
+    content:"";
+}
+
+#category_list h2
+{
+    background: transparent;
+}
+#category_list h2 img
+{
+    width: 100%;
+}
+
+/*BACK NEXT button*/
+#page_list_buttons
+{
+    margin: 15px 0 30px;
+}
+#page_list_buttons a
+{
+    display: block;
+    background: #8a8168;
+    color: #fff;
+    padding: 10px 40px;
+    text-align: center;
+}
+#page_list_buttons a:hover
+{
+    opacity: 0.75;
+}
+#back_button
+{
+    float: left;
+}
+#next_button
+{
+    float: right;
+}
+#page_list_buttons li 
+{
+    list-style: none;
+}
+/*商品一覧ページの大枠*/
+#products_box
+{
+    background: #fff;
+    margin-bottom: 30px;
+}
+#products_name
+{
+    padding: 0 0 30px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-bottom: 1px solid #e2ddd4;
+}
+#products_id
+{
+    color:#b0b0b0;
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+/*商品一覧ページ：ギャラリー部分*/
+#products_pics
+{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2ddd4;
+}
+#products_pics img
+{
+    width: 100%;
+    display: block;
+}
+#pict_list li img
+{
+    border:1px solid #fff;
+    border-top: none;
+}
+
+/*Form部分*/
+#cart_box
+{
+    border-bottom: 1px solid #e2ddd4;
+}
+#cart_box h3
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8a8168;
+}
+#cart_box table,#cart_box tr,#cart_box th,#cart_box td,#products_detail table,#products_detail tr,#products_detail th, #products_detail td
+{
+    border: 1px solid #e2ddd4;
+}
+#cart_box table,#products_detail table
+{
+    margin-top: 20px 0;
+    width: 100%;
+}
+#cart_box th,#cart_box td
+{
+    padding: 10px 0;
+    text-align: center;
+}
+#products_detail th
+{
+    padding: 10px 50px;
+    text-align: center;
+}
+#products_detail td
+{
+    padding: 10px 50px;
+}
+#cart_box th,#products_detail th
+{
+    font-size: 1.3rem;
+    color: #998669;
+    font-weight: normal;
+    background: #f9f9f5;
+}
+#cart_box td input,#products_detail td input
+{
+    display: block;
+    margin: auto;
+}
+.form_wrap h3,.form_wrap div
+{
+    display: inline-block;
+    padding: 10px 0 0;
+    margin-bottom: 10px;
+}
+.form_wrap h3
+{
+    width: 35%;
+}
+.form_wrap div
+{
+    width: 62%;
+    white-space: nowrap;
+}
+#price_data
+{
+    border-top: 1px solid #e2ddd4;
+    border-bottom: 1px solid #e2ddd4;
+}
+#price_wrap
+{
+    font-style: italic;
+}
+#price_data strong
+{
+    color: #e80f66;
+    font-size: 2rem;
+    font-weight: normal;
+}
+#price_data span
+{
+    font-size: 1.3rem;
+    padding: 0 5px;
+}
+#quantity_data
+{
+    margin-bottom: 15px;
+}
+#quantity_data input
+{
+    width: 100%;
+}
+#btn_cart input
+{
+    width: 225px;
+    height: 55px;
+}
+#btn_cart input:hover
+{
+    opacity: 0.75;
+}
+
+/*商品説明部分*/
+#products_detail h2,#products_detail h3
+{
+    font-size: 1.5rem;
+    color: #998669;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+#products_detail h2
+{
+    border-bottom: 1px solid #887f69;
+}

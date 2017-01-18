@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/* pc_design.css ver1.01 : Written by syam 2016.08.xx 記 */
+/* PCサイズ限定でサイト時の表示・表現の内容を記載していくCSS */
+
+#sp_menu
+{
+    display: none;
+}
+#pc_menu
+{
+    display: block !important;
+}
+#logo img
+{
+    width: 140px;
+}
+/*header*/
+header
+{
+    padding: 20px 0 0 !important;
+}
+/*ヘッダナビの設定*/
+header ul
+{
+    float: right;
+    padding: 17px 0 0;
+}
+header li
+{
+    display: inline-block;
+    margin: 0 4px;
+    font-weight: bold;
+}
+header li, header li *
+{
+    vertical-align: bottom;
+}
+.social_link
+{
+    font-size: 2.2rem !important;
+}
+
+#pc_menu li span.sp_menu_txt
+{
+    display: none;
+}
+#pc_menu li span.pc_menu_txt
+{
+    display: block;
+}
+/*変化途中のナビに関する設定*/
+
+@media(max-width: 749px){
+    header ul
+    {
+        padding: 0;
+    }
+}
+/*footer*/
+#page_top
+{
+    text-align: right;
+}
+
+#search_engine label
+{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #887f69;
+}

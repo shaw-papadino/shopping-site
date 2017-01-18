@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/* pc_design_2nd.css ver1.01 : Written by syam 2016.08.xx 記 */
+/* 2階層目（products.html / list.html）限定の指定を記載 */
+
+/* ItemList */
+.item_list li{
+	width:33.3%;
+}
+
+/* Shopping Guide */
+.guide_box{
+	width:50%;
+}
+
+/*商品詳細ページに関する設定*/
+#products_box
+{
+	padding: 40px 5%;
+}
+/*商品名idの部分*/
+#products_id
+{
+	float: right;
+}
+/*ギャラリー部分*/
+#main_view
+{
+	width: 72%;
+	float: left;
+}
+#main_view img
+{
+	border-right: 1px solid #fff;
+}
+#pict_list
+{
+	width: 28%;
+	float: right;
+}
+#pict_list li
+{
+	width: 48%;
+	float: left;
+}
+#form_wrapper
+{
+	float: left;
+	width: 55%;
+}
+#btn_cart
+{
+	float: right;
+	width: 225px;
+	margin-top: 24px;
+}
+@media(max-width:952px){
+	#form_wrapper
+	{
+		float:none;
+		width: 100%;
+	}
+	#btn_cart
+	{
+		clear:both;
+		float: none;
+		margin: 0 auto;
+	}
+	#btn_cart input
+	{
+		margin: 0 auto;
+		padding: 10px 0 20px;
+	}
+}

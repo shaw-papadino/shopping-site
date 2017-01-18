@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/* sp_design.css ver1.01 : Written by syam 2016.08.xx 記 */
+/* SPサイズ限定でサイト時の表示・表現の内容を記載していくCSS */
+
+#pc_menu
+{
+    display: none;
+}
+#logo img
+{
+    width: 110px;
+}
+/*header*/
+#logo
+{
+    width: 100%;
+    text-align: center;
+}
+#logo img
+{
+    margin-top: 15px;
+}
+/*ヘッダナビ*/
+#sp_menu
+{
+    text-align: center;
+}
+#sp_menu li
+{
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 4px;
+    font-size: 2.4rem;
+}
+#sp_menu li,#sp_menu li *
+{
+    vertical-align: bottom;
+}
+/*pagetopボタンの設定*/
+#page_top
+{
+    text-align: center;
+}
+/*ハンバーガー内の隠しメニュー部分*/
+#pc_menu
+{
+    background: #ff6d77;
+    padding: 10px;
+}
+#pc_menu li
+{
+    list-style: none;
+    font-weight: normal;
+    border-bottom: 1px solid #fff;
+}
+#pc_menu li:nth-child(4)
+{
+    border:none;
+    margin-bottom: 10px;
+}
+#pc_menu li span.pc_menu_txt
+{
+    display: none;
+}
+#pc_menu li span.sp_menu_txt
+{
+    display: block;
+}
+.social_link
+{
+    display: none;
+}
+#pc_menu a
+{
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+}
+/*footerナビ*/
+footer li
+{
+    margin: 0 1px;
+}
+
+#search_engine h4
+{
+    display: none;
+}
+/*about&shop info*/
+.sub_pict
+{
+    width: 40%;
+    padding: 15px 3%;
+    float: left;
+}
+.sub_text
+{
+    padding: 10px 2%;
+    width: 50%;
+    float: right;
+}
+.more_button
+{
+    text-align: center;
+}
+
+#shopping_guide h2
+{
+    background: transparent;
+}

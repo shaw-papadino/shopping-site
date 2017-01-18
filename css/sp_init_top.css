@@ -1,0 +1,9 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css); /* WEBFONT-FontAwesomeを使えるようにする */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600); /* WEBFONT-OpenSansを使えるようにする */
+@import url(./normalize.css); /* ブラウザリセットのためのCSS */
+@import url(./skelton.css); /* CSSフレームワーク */
+@import url(./base_design.css); /* PC-SP関係なく同じ命令を当てる内容を記載したCSS */
+@import url(./sp_design.css); /* SP限定のデザインを適用したい命令だけをまとめたCSS */
+@import url(./sp_design_top.css); /* SP表示時のTOPページでしか適用しない命令だけをまとめたCSS */
+@import url(../owl.carousel/assets/owl.carousel.min.css);
+@import url(../owl.carousel/assets/owl.theme.default.min.css);
